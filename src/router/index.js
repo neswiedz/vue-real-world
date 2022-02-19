@@ -10,7 +10,7 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
+    name: 'home',
     component: Home,
   },
   {
@@ -24,9 +24,10 @@ const routes = [
     component: AssetCreate,
   },
   {
-    path: '/asset/show',
+    path: '/asset/:asset_id',
     name: 'asset-show',
     component: AssetShow,
+    props: true,
   },
   // {
   //   path: '/asset/show',

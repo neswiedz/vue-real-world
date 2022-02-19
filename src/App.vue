@@ -4,7 +4,17 @@
       <router-link :to="{ name: 'home' }">Home</router-link> |
       <router-link :to="{ name: 'asset-list' }">Asset list</router-link> |
       <router-link :to="{ name: 'asset-create' }">Asset create</router-link> |
-      <router-link :to="{ name: 'asset-show' }">Asset show</router-link>
+      <router-link :to="{ name: 'asset-show', params: { asset_id: '1' } }"
+        >Asset show</router-link
+      >
+      |
+      <router-link :to="{ name: 'asset-show', params: { asset_id: '2' } }"
+        >Asset show</router-link
+      >
+      |
+      <router-link :to="{ name: 'asset-show', params: { asset_id: '3' } }"
+        >Asset show</router-link
+      >
     </div>
     <router-view />
   </div>
